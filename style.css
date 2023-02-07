@@ -1,0 +1,163 @@
+*{
+    font-family:'Poppins', sans-serif;
+}
+.head{
+    text-align: center;
+    height: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background: brown;
+    color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.row{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.row .body-col-2,.body-col-3{
+    align-items: center;
+}
+.body-col-1{
+    flex-basis: 15%;
+    min-width: 150px;
+   
+    padding-top: 50px;
+    margin-top: 30px;
+    position: relative;
+    left: 0;
+    top: 50px;
+}
+.body-col-1 ul{
+    display: block;
+    position: absolute;
+    left: -250px;
+    transition: left 1s;
+
+   
+}
+.body-col-1 ul li{
+    list-style-type: none;
+    font-size: larger;
+    padding: 10px;
+    
+}
+.body-col-1 ul li a{
+    color: brown;
+    text-decoration: none;
+}
+.body-col-1 ul li:hover{
+    text-decoration-line:underline;
+    transform: translateY(-2px);
+    transition: transform 1s;
+    cursor: pointer;
+}
+.body-col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-top: 20px;
+}
+.products{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 100px;
+}
+.col-3:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: transform 1s;
+}
+.col-3 img{
+    width: 150px;
+}
+.small-container{
+    max-width: 540px;
+    margin: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background-color: brown;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-4{
+    flex-basis: 25%;
+    min-width: 100px;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: transform 1s;
+}
+.col-4 img{
+    width: 120px;
+}
+
+.footer{
+    background: #000;
+    position: absolute;
+    color: #8a8a8a;
+    border-radius: 5px;
+    height: 30vh;
+    width: 99.4%;
+}
+.fa{
+    color: #ff523b;
+}
+.navi ul{
+    position: absolute;
+    top: -10%;
+
+   
+}
+
+@media only screen and (max-width: 490px) {
+    nav ul {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        background-color: #555;
+        width: 300px;
+    }
+    
+}
+.butt{
+    position: absolute;
+    top: -12%;
+
+}
+.butt a{
+    text-decoration-line: none;
+    color: white;
+    
+}
+.butt{
+    background: brown;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+.collapse a{
+    color: brown;
+}
